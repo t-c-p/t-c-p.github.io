@@ -1,0 +1,51 @@
+#document {
+	background-color: gray;
+	overflow: hidden;
+}
+.h1--title {
+	margin: 0;
+}
+.h1--title img {
+	width: 100%;
+	height: auto;
+}
+.desc {
+	padding: 0 20px;
+	color: #3c458d;
+	background: url(/images/bg.png) left top repeat;
+}
+
+.works {
+	padding: 0 20px;
+}
+.h2--title img{
+	width: 100%;
+	height: auto;
+}
+.works--content {
+	padding: 10px;
+	background: url(/images/bg.png) left top repeat;
+	color: #3c458d;
+}
+// ===========================
+// PC
+// ===========================
+@media (min-width: 768px) {
+	p {
+		font-size: 18px;
+	}
+	.content--title {
+		font-size: 30px;
+	}
+}
+// ===========================
+// SP
+// ===========================
+@media (max-width: 769px) {
+	p {
+		font-size: 13px;
+	}
+	.content--title {
+		font-size: 17px;
+	}
+}
