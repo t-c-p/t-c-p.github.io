@@ -1,0 +1,235 @@
+/*
+	CSS RESET
+*/
+html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align:baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+article, header, footer, aside, figure, figcaption, nav, section { 
+	display:block;
+}
+body {
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+ol, ul {
+	list-style: none;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+/*
+	共通
+*/
+html, body, .site-wrapper {
+	height: 100%;
+}
+section {
+	width: 100%;
+	height: 100%;
+}
+.card {
+	width: 100%;
+	height: 100%;
+}
+.hidden {
+	display: none;
+}
+.clearfix:after {
+	content:" ";
+	display:block;
+	clear:both;
+}
+
+.content-wrapper,
+.heading-wrapper {
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+}
+.content {
+	width: 80%;
+	height: 80%;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+}
+.heading {
+	width: 200px;
+	height: 200px;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+}
+.heading-title {
+	text-align: center;
+	font-size: 25px;
+	width: 200px;
+	height: 200px;
+	display: table-cell;
+	vertical-align: middle;
+}
+body {
+	background : #3c458d;
+	color:#3c458d;
+}
+.area-separation {
+	display: none;
+}
+/*
+	背景 p5
+*/
+.site-wrapper {
+	z-index: 10;
+}
+.polygon-wrapper {
+	z-index: 0;
+
+	position: fixed;
+	top:0;
+	left:0;
+
+	width: 100%;
+	height: 100%;
+}
+/*
+	トップ
+*/
+#top .team-name {
+	text-align: center;
+}
+#top .team-description {
+	position: absolute;
+	top: 60%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: 5%;
+	width: 100%;
+
+	text-align: center;
+	line-height: 1.3em;
+
+}
+.top-wrapper {
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+}
+.top-content {
+	width: 80%;
+	height: 80%;
+	max-width: 640px;
+	max-height: 640px;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+	padding: 0 5%;
+
+	background-image: url('../images/title.png');
+	background-size: 100%;
+
+	opacity: 0.8;
+}
+.top-content .arrow {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto 10px auto;
+	width: 39px;
+}
+/*
+	作品
+*/
+.work .content {
+	width: 80%;
+	height: 80%;
+	max-width: 640px;
+	max-height: 640px;
+
+	padding: 3% 5%;
+
+	background: rgba(255, 255, 255, 0.7);
+}
+.work .work-title-wrapper {
+	padding: 10px 0;
+}
+.work .work-title {
+	font-size: larger;
+
+	height: 1em;
+
+	display: block;
+	overflow: hidden;
+}
+.work .work-description {
+	width: 80%;
+
+	padding: 5px 0;
+
+	float: left;
+}
+.work .work-url {
+	width: 20%;
+
+	padding: 5px 0;
+	text-align: center;
+
+	float: left;
+}
+/*
+	コンタクト
+*/
+#contact .heading {
+	background: #FFFFFF;
+}
+#contact a {
+	color: #FFFFFF;
+}
+#contact a:hover {
+	color: #CCCCCC;
+}
+.contact-list li{
+	width: 50px;
+	text-align: center;
+	float: left;
+}
+.contact-list {
+	width: 100px;
+	height: 1em;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+}

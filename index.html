@@ -1,40 +1,102 @@
 <!DOCTYPE html>
-<!--[if IE 9]><html lang="ja" class="ie ie9" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><!--<![endif]-->
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="★★★">
-<meta name="keywords" content="★★★">
-<meta property="og:title" content="★★★">
-<meta property="og:description" content="★★★">
-<meta property="og:type" content="article">
-<meta property="og:url" content="★★★">
-<meta property="og:image" content="★★★">
-<meta property="og:site_name" content="★★★">
-<title>★★★</title>
-<link href="/common/css/styles.css" rel="stylesheet" media="all">
-<link href="/common/images/apple-touch-icon.png" rel="apple-touch-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<title>TSURUMAI CREATIVE PLAYGROUND</title>
+	<meta name="description" content="アクアリング鶴舞ラボで週末活動するサークル。様々な専門を持ったクリエイターが、各自のテーマに沿った実験的なプロトタイプを製作しています。">
+	<meta name="keywords" content="クリエイティブコーディング,インスタレーション,映像制作,鶴舞,愛知,名古屋">
+	<meta property="og:title" content="TSURUMAI CREATIVE PLAYGROUND">
+	<meta property="og:description" content="アクアリング鶴舞ラボで週末活動するサークル。様々な専門を持ったクリエイターが、各自のテーマに沿った実験的なプロトタイプを製作しています。">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://t-c-p.github.io/">
+	<meta property="og:image" content="★★★">
+	<meta property="og:site_name" content="TSURUMAI CREATIVE PLAYGROUND">
+
+	<link href="styles/index.css" rel="stylesheet" media="all">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="scripts/lib/jquery.bxslider.min.js"></script>
+	<link href="styles/lib/jquery.bxslider.css" rel="stylesheet" media="all">
 </head>
 <body>
-<div id="document">
-	<div class="desc">
-		<h1>TSURUMAI CREATIVE PLAYGROUND</h1>
-		<p>アクアリングに所属するエンジニア、クリエイターで結成された週末サークル。<br>各自のテーマに沿った実験的なプロトタイプを製作しています。</p>
-	</div>
-	<div id="works" class="works">
-		<h2>WORKS</h2>
-		<div class="works--content">
-			<h3 class="content--title">タイトルタイトルタイトル</h3>
-			<div class="content--image">
-				<img src="★★★">
-				<img src="★★★">
-				<img src="★★★">
-			</div>
-			<div class="content--desc">
-				<p>説明文です。説明文です。説明文です。説明文です。説明文です。</p>
+<div class="polygon-wrapper">
+	<canvas id="polygon" width="256" height="256"></canvas>
+</div>
+<div class="site-wrapper">
+	<!-- ABOUT -->
+	<section id="top" class="card">
+		<div class="top-wrapper">
+			<div class="top-content">
+				<h1 class="team-name hidden">TSURUMAI CREATIVE PLAYGROUND</h1>
+				<h3 class="team-description">
+					アクアリング鶴舞ラボで週末活動するサークル。<br>
+					様々な専門を持ったクリエイターが、各自のテーマに沿った実験的なプロトタイプを製作しています。
+				</h3>
+				<div class="arrow">
+					<img src="images/arrow-down.png" />
+				</div>
 			</div>
 		</div>
-	</div><!-- /.works -->
-</div><!-- /#document -->
+	</section>
+	<!-- WORKS -->
+	<hr id="start-works" class="area-separation" data-areaname="works">
+	<!--
+	<section id="works-title" class="card">
+		<div class="heading-wrapper">
+			<div class="heading">
+				<h2 class="heading-title">WORKS</h2>
+			</div>
+		</div>
+	</section>
+	-->
+	<!--<article class="card work" id="work-001">
+		<div class="content-wrapper">
+			<div class="content clearfix">
+				<div class="work-title-wrapper">
+					<h3 class="work-title">お葬式ペッパー</h3>
+				</div>
+				<ul class="slider">
+					<li><img src="images/works/osousiki.jpg"></li>
+					<li><img src="images/works/osousiki.jpg"></li>
+				</ul>
+				<div class="work-description">ロボットに、いつか来る日。準備しませんか。</div>
+				<div class="work-url"><a href="https://vimeo.com/172713339">URL</a></div>
+			</div>
+		</div>
+	</article>-->
+	<!-- WORKS用テンプレート -->
+	<div id="template-work" class="hidden">
+		<article class="card work">
+			<div class="content-wrapper">
+				<div class="content clearfix">
+					<div class="work-title-wrapper">
+						<h3 class="work-title">{title}</h3>
+					</div>
+					<ul class="slider">
+						<!--
+							thumbnail-image:[]
+							<li><img src="images/works/osousiki.jpg"></li>
+						-->
+					</ul>
+					<div class="work-description">{description}</div>
+					<div class="work-url"><a href="{url}" target="_blank">URL</a></div>
+				</div>
+			</div>
+		</article>
+	</div>
+	<!-- CONTACT -->
+	<hr id="start-contact" class="area-separation" data-areaname="works">
+	<section id="contact" class="card">
+		<div class="heading-wrapper">
+			<ul class="contact-list clearfix">
+				<li><a href="#" class="contact-item">FB</a></li>
+				<li><a href="mailto:tsurumai.cp@gmail.com?subject=【お問い合わせ】" class="contact-item">MAIL</a></li>
+			</ul>
+		</div>
+	</section>
+</div>
+	<script src="scripts/index.js"></script>
+	<script src="scripts/polygon.js"></script>
 </body>
 </html>
