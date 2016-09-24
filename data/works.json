@@ -7,4 +7,15 @@
 		"images/works/osousiki.jpg",
 		"images/works/osousiki.jpg"
 	]
+},
+{
+	"title": "ツメノアカプロジェクト",
+	"description": "人工知能を使って、あの人のツメノアカつくっちゃいました。",
+	"staff": ["深谷泰士","加藤明洋", "馬場三紗子"],
+	"url": "https://www.instagram.com/tsumenoaka/",
+	"thumbnail-image": [
+		"images/works/tsume-single.jpg",
+		"images/works/tsume-inprogress.jpg",
+		"images/works/tsume-all.jpg"
+	]
 }]
