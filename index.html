@@ -17,13 +17,16 @@
 
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script src="scripts/lib/jquery.bxslider.min.js"></script>
+	<script src="scripts/lib/jquery.fullPage.min.js"></script>
 	<link href="styles/lib/jquery.bxslider.css" rel="stylesheet" media="all">
+	<link href="styles/lib/jquery.fullPage.css" rel="stylesheet" media="all">
+
 </head>
 <body>
 <div class="polygon-wrapper">
 	<canvas id="polygon" width="256" height="256"></canvas>
 </div>
-<div class="site-wrapper">
+<div class="site-wrapper" id="fullpage">
 	<!-- ABOUT -->
 	<section id="top" class="card">
 		<div class="top-wrapper">
@@ -40,7 +43,7 @@
 		</div>
 	</section>
 	<!-- WORKS -->
-	<hr id="start-works" class="area-separation" data-areaname="works">
+	<!-- <hr id="start-works" class="area-separation" data-areaname="works"> -->
 	<!--
 	<section id="works-title" class="card">
 		<div class="heading-wrapper">
@@ -65,28 +68,9 @@
 			</div>
 		</div>
 	</article>-->
-	<!-- WORKS用テンプレート -->
-	<div id="template-work" class="hidden">
-		<article class="card work">
-			<div class="content-wrapper">
-				<div class="content clearfix">
-					<div class="work-title-wrapper">
-						<h3 class="work-title">{title}</h3>
-					</div>
-					<ul class="slider">
-						<!--
-							thumbnail-image:[]
-							<li><img src="images/works/osousiki.jpg"></li>
-						-->
-					</ul>
-					<div class="work-description">{description}</div>
-					<div class="work-url"><a href="{url}" target="_blank">URL</a></div>
-				</div>
-			</div>
-		</article>
-	</div>
+
 	<!-- CONTACT -->
-	<hr id="start-contact" class="area-separation" data-areaname="works">
+	<!-- <hr id="start-contact" class="area-separation" data-areaname="works"> -->
 	<section id="contact" class="card">
 		<div class="heading-wrapper">
 			<ul class="contact-list clearfix">
@@ -96,7 +80,28 @@
 		</div>
 	</section>
 </div>
+<!-- WORKS用テンプレート -->
+<div id="template-work" class="hidden">
+	<article class="card work">
+		<div class="content-wrapper">
+			<div class="content clearfix">
+				<div class="work-title-wrapper">
+					<h3 class="work-title">{title}</h3>
+				</div>
+				<ul class="slider">
+					<!--
+						thumbnail-image:[]
+						<li><img src="images/works/osousiki.jpg"></li>
+					-->
+				</ul>
+				<div class="work-description">{description}</div>
+				<div class="work-url"><a href="{url}" target="_blank">URL</a></div>
+			</div>
+		</div>
+	</article>
+</div>
 	<script src="scripts/index.js"></script>
 	<script src="scripts/polygon.js"></script>
+	<!-- <script src="scripts/test.js"></script> -->
 </body>
 </html>

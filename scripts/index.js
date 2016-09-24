@@ -12,7 +12,7 @@ x サムネイル画像の表示、とりあえず、bxsliderで
 	// WORKS用テンプレート
 	var $templateWork = $('#template-work .work');
 	// WORKS開始位置
-	var $startWorks = $('#start-works');
+	var $startWorks = $('#top'); // $('#start-works');
 	// jsonのロード
 	$.getJSON('data/works.json', function(data){
 		$.each(data, function(index, workInfo) {
@@ -38,6 +38,9 @@ x サムネイル画像の表示、とりあえず、bxsliderで
 			// スライダーの設定
 			$dom.find('.slider').bxSlider({pager: false});
 		});
-	})
-
+		// フルページの設定をする。
+		$('#fullpage').fullpage({
+			sectionSelector: '.card'
+		});
+	});
 })(jQuery);
