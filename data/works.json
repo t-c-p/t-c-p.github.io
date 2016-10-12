@@ -1,10 +1,9 @@
 [{
 	"title": "お葬式ペッパー",
 	"description": "ロボットに、いつか来る日。準備しませんか。",
-	"staff": ["馬場三紗子"],
+	"staff": ["馬場三紗子","深谷泰士"],
 	"url": "https://vimeo.com/172713339",
 	"thumbnail-image": [
-		"images/works/osousiki.jpg",
 		"images/works/osousiki.jpg"
 	]
 },
@@ -17,5 +16,14 @@
 		"images/works/tsume-single.jpg",
 		"images/works/tsume-inprogress.jpg",
 		"images/works/tsume-all.jpg"
+	]
+},
+{
+	"title": "INFECTION OF PATTERN",
+	"description": "2016/10/3 - 9 JAGDA愛知「パターンの可能性」@一宮ReTAiL",
+	"staff": ["佐藤直樹", "可児亘","深谷泰士","小林知史","馬場三紗子"],
+	"thumbnail-image": [
+		"images/works/jagda-iop-2.jpg",
+		"images/works/jagda-iop.jpg"
 	]
 }]
